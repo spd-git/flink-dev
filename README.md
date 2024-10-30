@@ -7,7 +7,12 @@ brew install openjdk@11
 # create a symlink to the Java version
 sudo ln -sfn /usr/local/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
 # add the Java version to the PATH and append to the .zshrc file
-echo alias j11="export JAVA_HOME=/usr/local/opt/openjdk@11 ; java -version" >> ~/.zshrc
+echo 'alias j11="export JAVA_HOME=/usr/local/opt/openjdk@11 ; java -version"' >> ~/.zshrc
+```
+
+This will allow you to switch to Java 11 by running the following command:
+```shell
+j11
 ```
 
 Install Flink
